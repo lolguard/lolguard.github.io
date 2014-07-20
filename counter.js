@@ -19,7 +19,7 @@ function update() {
 
 function createTable() {
   s = "";
-  rows = 5; columns = 36;
+  rows = 5; columns = 52;
   for(i=0; i<rows; i++){
     s+="<div>";
     for(j=0; j<columns; j++) {
@@ -32,8 +32,8 @@ function createTable() {
 
 function updateTable(d) {
   total = 3650;
-  n = Math.floor(180*d/3650);
-  for(i=0; i<n && i<180; i++) {
+  n = Math.floor(260*d/1825);
+  for(i=0; i<n && i<260; i++) {
     document.getElementById("cell"+i).className="occupied";
   }
 }

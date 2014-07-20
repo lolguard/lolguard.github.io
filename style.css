@@ -9,7 +9,7 @@
 
 #visualization { display: table }
 #visualization div { display: table-row }
-#visualization div div { border: dotted 1px #111; display: table-cell; width:20px; height:35px }
+#visualization div div { border: dotted 1px #111; display: table-cell; width:12px; height:35px }
 
 .empty{background: #E2E0D1}
 .occupied{background: #AA463C}
