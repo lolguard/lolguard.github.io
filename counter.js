@@ -1,4 +1,4 @@
-event = new Date("26 May 2014 18:00 UTC+5:30");
+event = new Date("Mon May 26 2014 18:00 UTC+5:30");
 
 function update() {
   cur = new Date();
