@@ -1,0 +1,8 @@
+#d1,#h1,#m1,#s1{font-size:50px;text-align:center;font-weight:bold;margin:0}
+
+.counter,.counter5{display:inline-block;zoom:1;text-transform:uppercase;text-align:center;*display:inline}.counter{width:20%;font-size:18px}.counter5{width:20%;font-size:36px}
+
+#contents{position:relative;width:800px;margin:40 auto}
+#main-counter{position:relative;margin:auto;text-align:center}
+#image{margin:10 auto; text-align:center}
+
