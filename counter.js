@@ -14,6 +14,32 @@ function update() {
   document.getElementById("h1").innerHTML=h;
   document.getElementById("m1").innerHTML=m;
   document.getElementById("s1").innerHTML=s;
+  updateTable(d);
 }
 
-window.setInterval(update,500);
+function createTable() {
+  s = "";
+  rows = 5; columns = 36;
+  for(i=0; i<rows; i++){
+    s+="<div>";
+    for(j=0; j<columns; j++) {
+      s+=("<div class=\"empty\" id=\"cell"+(i*columns+j)+"\"></div>");
+    }
+    s+="</div>";
+  }
+  document.getElementById("visualization").innerHTML=s;
+}
+
+function updateTable(d) {
+  total = 3650;
+  n = Math.floor(180*d/3650);
+  for(i=0; i<n && i<180; i++) {
+    document.getElementById("cell"+i).className="occupied";
+  }
+}
+
+createTable();
+update();
+
+window.setInterval(update,100);
+
